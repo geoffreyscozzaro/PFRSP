@@ -19,4 +19,4 @@ R/S/T: letter qualifying the disrupted mode (Road, Subway and Train respectively
 S45_1/_2/_3: Disruption on the subway with a maximum passenger delay of 45min tested on different hours of the day (5am-10am, 2pm-9pm, 5am-9pm respectively)
 All the characteristics of these scenarios are summarized in the file 'constantes.py'._
 
-The user should run 'main.py'. The choice of the algorithm (heuristic or milp) is done in main.py. The parameters of the model and the selection of the scenario can be modified in the 'constants.py' file
+The user should run 'main.py'. The choice of the algorithm (heuristic or milp) is done in main.py. The parameters of the model and the selection of the scenario can be modified in the 'constants.py' file.
