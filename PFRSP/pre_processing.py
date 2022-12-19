@@ -44,13 +44,13 @@ def initialized_airport(airport):
     airport.taxi.capacity = 0 #capacity computed in set_max_capacity
     airport.taxi_in_duration = np.zeros((NB_RUNWAYS,NB_TERMINALS)) #computed in compute_average_taxi_time()
     airport.taxi_out_duration = np.zeros((NB_TERMINALS,NB_RUNWAYS)) #computed in compute_average_taxi_time()
-    df_taxi = pd.read_csv('Data/Taxi_time_CDG.csv')
+    df_taxi= pd.read_csv('Data/taxi_time_seconds.csv',index_col=0)
     for terminal in dico_terminals:
         for runway in arr_runways:
-            taxi_duration = df_taxi[(df_taxi['Terminal'] == terminal) & (df_taxi['QFU']==runway)]['TAXI_TIME'].values[0]
+            taxi_duration = df_taxi.loc[terminal,runway]
             airport.taxi_in_duration[arr_runways[runway]][dico_terminals[terminal]] = int(taxi_duration//TIME_STEP)
         for runway in dep_runways:
-            taxi_duration = df_taxi[(df_taxi['Terminal'] == terminal) & (df_taxi['QFU']==runway)]['TAXI_TIME'].values[0]
+            taxi_duration = df_taxi.loc[terminal,runway]
             airport.taxi_out_duration[dico_terminals[terminal]][dep_runways[runway]] = int(taxi_duration//TIME_STEP)
     print('taxi in *** : ',airport.taxi_in_duration)
     print('taxi out *** : ', airport.taxi_out_duration)
