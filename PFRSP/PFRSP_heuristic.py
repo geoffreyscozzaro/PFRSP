@@ -228,16 +228,7 @@ def run_greedy(airport, flightset0, passengers0, t_start, t_end, list_tabu_dep_f
                 if arr_key != -1:
                     flightset.flights_a[arr_key].final_ibt -= delay_arr
                     flightset.flights_a[arr_key].final_landing_time -= delay_arr
-                # if res_runway == False:
-            #     flightset.flights_d[key].final_obt -= delay
-            #     flightset.flights_d[key].final_takeoff -= delay
-            # else:
-                # print(res_terminal)
-                # if res_terminal == False:
-                #     flightset.flights_d[key].final_obt -= delay
-                #     flightset.flights_d[key].final_takeoff -= delay
-                # else:
-                #     if res_taxi == False:
+
 
     return flightset.flights_a, flightset.flights_d, list_tabu_dep_flights, dico_tabu_arr_flights
 

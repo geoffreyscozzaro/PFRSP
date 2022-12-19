@@ -451,34 +451,6 @@ alpha,beta = ALPHA,BETA
 main(airport,flightset,passengers, alpha,beta,read_sol=False, greedy= False, savefig=True) #, filename=FOLDER_RESULTS + f'flightset_results_{SCENARIO}_pushback_{DELTA_OBT*TIME_STEP//60}min.txt')
 
 
-# def run_main():
-#     alphas = [0, 0.01, 0.1, 1, 10, 100]
-#     betas = [0, 0.01, 0.1, 1, 10, 100]
-#     res = np.zeros((len(alphas), len(betas), 5))
-#     print(res[0][0])
-#     for i in range(len(alphas)):
-#         for j in range(len(betas)):
-#             airport, flightset, passengers = read_instance()
-#             tot_stranded_pax_bo, tot_stranded_pax_ao, tot_deviation_arr_flights, tot_deviation_dep_flights, tot_slots_violated = main(
-#                 airport, flightset, passengers, alphas[i], betas[j], read_sol=False, glouton=False, savefig=True,
-#                 filename=FOLDER_RESULTS + f'flightset_results_{SCENARIO}.txt')
-#             res[i][j] = [tot_stranded_pax_bo, tot_stranded_pax_ao, tot_deviation_arr_flights,
-#                                 tot_deviation_dep_flights, tot_slots_violated]
-#     with open('Results/S0/sensitivity_alpha_beta_analysis.txt', 'w') as file:
-#         airport, flightset, passengers = read_instance()
-#         nb_dep_flights = len(flightset.flights_d)
-#         nb_arr_flights = len(flightset.flights_a)
-#         # crop_instance(airport,flightset,passengers,START_AIRPORT_DISRUPTION_TIME,T_MAX)
-#         file.write(
-#             'alpha  beta nb_stranded_pax total_deviation_arr_flight  total_deviation_departure_flight total_slots_violated \n')
-#         file.write(f'nb_arr_flights= {nb_arr_flights} nb_dep_flights= {nb_dep_flights}  \n')
-#         for i in range(len(alphas)):
-#             for j in range(len(betas)):
-#                 file.write(f'{alphas[i]}  {betas[j]}  {res[i][j][0]}  {res[i][j][1]} {res[i][j][2]}'
-#                            f'  {res[i][j][3]}  {res[i][j][4]} \n')
-
-
-# run_main()
 
 
 
