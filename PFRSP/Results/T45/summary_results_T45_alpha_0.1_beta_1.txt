@@ -1,0 +1,12 @@
+Number of stranded passengers before optim: 1050
+Number of stranded passengers after optim: 407
+Nb departure flights: Day= 717 , during the disruption= 378
+Nb arrival flights: Day= 723 , during the disruption= 299
+Reduction in number of stranded passengers after optim: 61.24%
+average deviation for landing flights during disruption: 1.0min
+total deviation for landing flights: 310min
+nb of arrival flights that have been delayed: 44
+average deviation for  departure flights: 6.3min
+total deviation for departure flights: 2375min
+nb of departure flights that have been delayed: 208
+nb of departure flights that didn't respect their slot: 67
