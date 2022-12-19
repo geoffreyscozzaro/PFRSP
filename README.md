@@ -1,5 +1,8 @@
 # PFRSP
 This project proposes an approach  to reschedule flights at a tactical level when an airport access mode disruption occurs.
+More details on the problem can be found in https://hal-enac.archives-ouvertes.fr/hal-03701665/document.
+This work is also part of the SESAR project called TRANSIT (https://www.sesarju.eu/projects/transit)
+
 Assuming an information sharing between ground and air transportation stakeholders, passengers arrival time forecast at the gate could be frequently updated.
 Then based on these new forecast, we propose to reschedule flights to minimize the number of stranded passengers while considering airside constraints into account. 
 Two methods are proposed:
