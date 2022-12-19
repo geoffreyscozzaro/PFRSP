@@ -5,7 +5,7 @@ This work is also part of the SESAR project called TRANSIT (https://www.transit-
 
 Assuming an information sharing between ground and air transportation stakeholders, passengers arrival time forecast at the gate could be frequently updated.
 Then based on these new forecast, we propose to reschedule flights to minimize the number of stranded passengers while considering airside constraints into account. 
-Two methods are proposed:
+Two methods are proposed: \n
 -A Mixed-Integer Linear Programming model solved through Gurobi solver (PFRSP_MILP.py)
 -An Heuristic approach based on a simple decision procedure that could be followed by an airport operator (PFRSP_heuristic.py)
 
