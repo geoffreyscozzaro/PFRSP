@@ -1,5 +1,5 @@
 import numpy as np
-from constantes import *
+from constants import *
 
 class Passenger():
     def __init__(self,flightset):

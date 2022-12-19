@@ -1,4 +1,4 @@
-from constantes import *
+from constants import *
 from pre_processing import crop_instance,compute_occupancies_ogp
 import numpy as np
 

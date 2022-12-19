@@ -1,5 +1,5 @@
 
-from constantes import *
+from constants import *
 import numpy as np
 
 

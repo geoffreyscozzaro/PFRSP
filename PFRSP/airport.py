@@ -1,4 +1,4 @@
-from constantes import *
+from constants import *
 
 class Terminal():
     def __init__(self, terminal_name, terminal_number, capacity):
