@@ -168,7 +168,3 @@ TERMINAL_STEP_CONSTRAINT = True
 # REDUCTION_PERCENT= 0.15
 
 
-# import numpy as np
-# arr = np.array([6,4,5,0,0,2])
-#
-# print(np.sum(arr !=0))
